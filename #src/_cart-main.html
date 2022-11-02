@@ -1,0 +1,189 @@
+<section class="section shop-cart">
+	<div class="container">
+		<h2 class="section-heading">Корзина </h2>
+	</div>
+	<div class="cart-main-box">
+		<div class="container">
+			<div class="cart-product-list">
+				<div class="cart-product-list__header">
+					<span class="title img-title">Фото</span>
+					<span class="title product-title">Наименование товара</span>
+					<span class="title price-title">Цена</span>
+					<span class="title amount-title">Количество</span>
+					<span class="title remove-title">Удалить</span>
+				</div>
+				<div class="cart-product-list__item">
+					<div class="img-convert">
+						<img src="img/product-images/product-card-01.png" alt="">
+					</div>
+					<div class="title">Керамический гриль SG 12 зелёный</div>
+					<div class="price">
+						<div class="price__new">44 980 ₽</div>
+						<div class="price__old"></div>
+					</div>
+					<div class="quantity_inner">
+						<button class="bt_minus button">
+							<i class="fa-solid fa-minus"></i>
+						</button>
+						<input type="text" class="quantity" value="1" data-max-count="20">
+						<button class="bt_plus button">
+							<i class="fa-solid fa-plus"></i>
+						</button>
+					</div>
+					<button class="remove-product-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+				</div>
+				<div class="cart-product-list__item">
+					<div class="img-convert">
+						<img src="img/product-images/product-card-02.png" alt="">
+					</div>
+					<div class="title">Гриль-барбекю Helios PR-ZD-624</div>
+					<div class="price">
+						<div class="price__new">4 000 ₽</div>
+						<div class="price__old">4 525 ₽</div>
+					</div>
+					<div class="quantity_inner">
+						<button class="bt_minus button">
+							<i class="fa-solid fa-minus"></i>
+						</button>
+						<input type="text" class="quantity" value="1" data-max-count="20">
+						<button class="bt_plus button">
+							<i class="fa-solid fa-plus"></i>
+						</button>
+					</div>
+					<button class="remove-product-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+				</div>
+				<div class="cart-product-list__footer">
+					<form action="" class="coupon-form">
+						<input type="text" placeholder="Промокод" class="input" required>
+						<input type="submit" class="main-btn null-btn" value="применить код">
+					</form>
+					<div class="sum-price">
+						<div class="sum-price__title">Итого к оплате:</div>
+						<div class="sum-price__numb">48 980 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="popular-product-mob-box">
+				<span class="title">Выгодные предложения прямо сейчас</span>
+				<a href="#" class="link">
+					<span class="text">Показать</span>
+					<span class="icon"><i class="fa-solid fa-arrow-down"></i></span>
+				</a>
+			</div>
+		</div>
+		<div class="container" style="margin-top: 50px;">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="onicon-heading">
+						<span class="onicon-heading__icon">
+							<img src="img/icons/user-icon.png" alt="">
+						</span>
+						<h3 class="onicon-heading__title">Заполните форму для оформления заказа</h3>
+					</div>
+					<form action="" class="cart-contacts-form">
+						<input type="text" placeholder="Укажите ФИО*" required>
+						<input type="phone" placeholder="Телефон*" required>
+						<input type="email" placeholder="Е-mail:">
+						<input type="text" placeholder="Адрес доставки">
+						<textarea placeholder="Комментарии к заказу"></textarea>
+						<div class="checkbox-item">
+							<input type="checkbox" id="cart-contacts-form-privacy-checkbox" class="input" checked="">
+							<label for="cart-contacts-form-privacy-checkbox" class="label">
+								<span class="icon"></span>
+								<span class="text">
+									Согласен с <a href="#" class="link"> Правилами пользования и политикой
+										конфиденциальности магазина ПолонСтол <span style="color: red;">*</span></a>
+								</span>
+							</label>
+						</div>
+						<span class="submit-description"><span style="color: red;">*</span> Обязательно к заполнению</span>
+					</form>
+				</div>
+				<div class="col-lg-4">
+					<div class="onicon-heading">
+						<span class="onicon-heading__icon">
+							<img src="img/icons/location-delivery.png" alt="">
+						</span>
+						<h3 class="onicon-heading__title">Способ доставки</h3>
+					</div>
+					<form action="" class="cart-radiogroup-form">
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="delivery-radiogroup" class="input" checked>
+								<span class="icon"></span>
+								<span class="text">Курьер</span>
+							</label>
+						</div>
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="delivery-radiogroup" class="input">
+								<span class="icon"></span>
+								<span class="text">Транспортная компания</span>
+							</label>
+						</div>
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="delivery-radiogroup" class="input">
+								<span class="icon"></span>
+								<span class="text">Самовывоз</span>
+							</label>
+						</div>
+					</form>
+					<div class="onicon-heading">
+						<span class="onicon-heading__icon">
+							<img src="img/icons/location-delivery.png" alt="">
+						</span>
+						<h3 class="onicon-heading__title">Способ оплаты</h3>
+					</div>
+					<form action="" class="cart-radiogroup-form">
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="payments-radiogroup" class="input" checked>
+								<span class="icon"></span>
+								<span class="text">Наличные при получении</span>
+							</label>
+						</div>
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="payments-radiogroup" class="input">
+								<span class="icon"></span>
+								<span class="text">Картой при получении</span>
+							</label>
+						</div>
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="payments-radiogroup" class="input">
+								<span class="icon"></span>
+								<span class="text">Оплата по счету</span>
+							</label>
+						</div>
+						<div class="cart-radiogroup-form__item">
+							<label class="label">
+								<input type="radio" name="payments-radiogroup" class="input">
+								<span class="icon"></span>
+								<span class="text">Онлайн оплата</span>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-top: 50px;">
+			<div class="cart-sucess-product-list__footer">
+				<div class="delivery-price">
+					<div class="title">Стоимость доставки: </div>
+					<div class="price">550 ₽</div>
+				</div>
+				<div class="sum-price">
+					<div class="title">Итого к оплате с учетом доставки: </div>
+					<div class="price">49 530 ₽</div>
+				</div>
+				<button class="main-btn null-btn" value="Отправить заказ">Отправить заказ</button>
+			</div>
+		</div>
+	</div>
+</section>

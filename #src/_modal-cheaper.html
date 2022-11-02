@@ -1,0 +1,44 @@
+<!-- Модальное окно (Отзыв)-->
+<div class="modal fade cheaper-modal" id="cheaperModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			<div class="modal-body">
+				<h4 class="modal-heading">Укажите ссылку где вы нашли
+					такой же товар дешевле и в наличии и мы сделаем скидку
+				</h4>
+				<div class="cheaper-modal-body">
+					<div class="modal-thumbnail">
+						<img src="img/product-images/thumbnail.jpg" alt="">
+						<h5 class="modal-product-title">Гриль угольный Gratar Family Standart BBQ</h5>
+					</div>
+					<form action="" class="one-click-form">
+						<div class="one-click-form__item">
+							<input type="text" placeholder="Имя* " required>
+						</div>
+						<div class="one-click-form__item">
+							<input type="phone" placeholder="Телефон*" required>
+						</div>
+						<div class="one-click-form__item">
+							<textarea class="textarea" placeholder="Комментарий "></textarea>
+						</div>
+						<div class="one-click-form__item checkbox-item">
+							<input type="checkbox" id="cheaper-privacy-checkbox" class="input" checked="">
+							<label for="cheaper-privacy-checkbox" class="label">
+								<span class="icon"></span>
+								<span class="text">
+									Согласен с <a href="#" class="link"> Правилами пользования и политикой
+										конфиденциальности магазина ПолонСтол <span style="color: red;">*</span></a>
+								</span>
+							</label>
+						</div>
+						<div class="one-click-form__item submit-item">
+							<input type="submit" class="main-btn null-btn" value="Отправить">
+							<span class="submit-description"><span style="color: red;">*</span> Обязательно к заполнению</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

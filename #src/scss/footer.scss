@@ -1,0 +1,153 @@
+.site-footer {
+	padding: 30px 0;
+	background: #ededed;
+}
+
+.footer-logo-box {
+	display: flex;
+}
+
+.copyright-col {
+	display: flex;
+	flex-direction: column;
+	padding-right: 20px;
+}
+
+.site-copyright {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	p {
+		margin-bottom: 0;
+		font-size: 14px;
+		color: rgb(20, 20, 20);
+		line-height: 1.2;
+		text-align: left;	
+	}
+}
+
+.site-copyright-description {
+	margin-bottom: 0;
+	font-size: 14px;
+	color: rgb(20, 20, 20);
+	line-height: 1.2;
+	text-align: left;	
+	margin-bottom: 30px;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		li {
+			display: flex;
+			a {
+				display: flex;
+				font-size: 14px;
+				color: #3e77aa;
+				text-decoration: underline;
+				line-height: 1.714;	
+				&:hover {
+					text-decoration: none;
+				}		
+			}
+		}
+	}
+}
+
+
+.socials-links {
+	display: flex;
+	margin-top: 10px;
+	margin-left: -5px;
+	&__item {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3px;
+		&.facebook-item {
+			font-size: 30px;
+			color: #42599a;
+		}
+		&.instagram-item {
+			background: #d6249f;
+  		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+			border-radius: 250px;
+			color: #fff;
+		}
+	}
+}
+
+.footer-address {
+	display: flex;
+	flex-direction: column;
+	&__text {
+		font-size: 14px;
+		color: #141414;
+		line-height: 1.2;
+		text-align: left;		
+		margin-bottom: 2px;
+	}
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	&__item {
+		display: flex;
+		font-size: 14px;
+		color: #3e77aa;
+		line-height: 1.2;
+		text-align: left;		
+		margin-bottom: 2px;
+		text-decoration: underline;
+	}
+}
+
+.footer-title {
+	font-size: 14px;
+	color: #141414;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+}
+
+.footer-contacts-list {
+	display: flex;
+	flex-direction: column;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		&:last-child {
+			margin-bottom: 10px;
+		}
+		.title {
+			font-size: 14px;
+			color: #141414;
+			font-weight: 500;
+			line-height: 1.2;
+			text-align: left;
+		}
+	}
+}
+
+.footer-email {
+	display: flex;
+	align-items: center;
+	&__title {
+		font-size: 14px;
+		color: #141414;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: left;
+		margin-right: 6px;
+	}
+}

@@ -1,0 +1,30 @@
+.partners-slider {
+	padding: 50px 0;
+	background: #f6f6f6;
+	mix-blend-mode: multiply;
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 120px;
+		mix-blend-mode: multiply;
+		padding: 0 15px;
+		img {
+			max-height: 100%;
+			max-width: 100%;
+			object-fit: contain;
+			mix-blend-mode: multiply;
+		}
+	}
+}
+
+.partners-slider-body {
+	mix-blend-mode: multiply;
+	padding: 0 30px;
+	.slick-arrow.slick-prev {
+		left: -5px;
+	}
+	.slick-arrow.slick-next {
+		right: -5px;
+	}
+}

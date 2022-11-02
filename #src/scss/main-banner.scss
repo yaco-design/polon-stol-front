@@ -1,0 +1,53 @@
+@media all and (min-width: 576px) {
+	.main-banner-body__item {
+		.mobile-image {
+			display: none;
+		}
+	}
+}
+
+@media all and (max-width: 575px) {
+	.main-banner-body__item {
+		.descktop-image {
+			display: none;
+		}
+	}
+}
+
+.main-banner {
+	padding-top: 50px;
+}
+
+.main-banner-body {
+	&.small-size {
+		.main-banner-body__item {
+			height: 220px;
+		}
+	}
+	&__item {
+		border-radius: 12px;
+		overflow: hidden;
+		width: 100%;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		right: 0;
+		z-index: 4;
+		li {
+			button {
+				background: #ffffff80;
+			}
+		}
+		.slick-active {
+			button {
+				background: #fff;
+			}
+		}
+	}
+}

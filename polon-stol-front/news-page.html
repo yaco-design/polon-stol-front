@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Новости и статьи</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header site-header">
+	<div class="container">
+		<a href="/" class="site-logo">
+			<img src="img/logo.png" alt="">
+		</a>
+		<div class="header-nav">
+			<div class="header-nav__top">
+				<div class="header-city-select">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+							<defs>
+								<style>
+									.cls-1 {
+										fill: #413b38;
+										fill-rule: evenodd;
+									}
+								</style>
+							</defs>
+							<path id="Location.svg" class="cls-1"
+								d="M545.778,16.221L540,27.007V23a1,1,0,0,0-1-1h-4.008l10.786-5.778M547,14a1,1,0,0,0-.472.119l-14,7.5A1,1,0,0,0,533,23.5h5.5V29a1,1,0,0,0,1.882.472l7.5-14A1,1,0,0,0,547,14h0Z"
+								transform="translate(-532 -14)" />
+						</svg>
+					</span>
+					<div class="dropdown">
+						<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Москва
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Саратов</a></li>
+							<li><a class="dropdown-item" href="#">Самара</a></li>
+							<li><a class="dropdown-item" href="#">Нижний новгород</a></li>
+							<li><a class="dropdown-item" href="#">Самара</a></li>
+							<li><a class="dropdown-item" href="#">Астрахань</a></li>
+							<li><a class="dropdown-item" href="#">Ростов-на-Дону</a></li>
+							<li><a class="dropdown-item" href="#">Саратов</a></li>
+							<li><a class="dropdown-item" href="#">Самара</a></li>
+						</ul>
+					</div>
+				</div>
+				<nav class="header-menu">
+					<button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Монтаж</a>
+						</li>
+						<li>
+							<a href="#">Гарантия</a>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a href="#">Оптовикам</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-nav__bottom">
+				<div class="header-catalog">
+					<button class="header-catalog__btn">
+						<span class="icon"><i class="fa-solid fa-bars"></i></span>
+						<span class="text">Каталог</span>
+					</button>
+					<div class="header-catalog__content">
+						<div class="container header-catalog-body">
+							<ul class="header-catalog-list">
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/discount-icon.png" alt="">
+										</span>
+										<span class="text">Акция</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/barbeku.png" alt="">
+										</span>
+										<span class="text">Барбекю</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/mangal.png" alt="">
+										</span>
+										<span class="text">Мангалы</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/ug-grill.png" alt="">
+										</span>
+										<span class="text">Угольные грили</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/sm-grill.png" alt="">
+										</span>
+										<span class="text">Смокеры Грили</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/ker-grill.png" alt="">
+										</span>
+										<span class="text">Грили керамические</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/gas-garel.png" alt="">
+										</span>
+										<span class="text">Газовые горелки</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="header-catalog-list">
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/vs-barb.png" alt="">
+										</span>
+										<span class="text">Встраиваемое оборудование для барбекю</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/gass-grill.png" alt="">
+										</span>
+										<span class="text">Газовые грили</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/pel-grill.png" alt="">
+										</span>
+										<span class="text">Пеллетные грили</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/otop-pech.png" alt="">
+										</span>
+										<span class="text">Отопительно варочные печи</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/pech-kazan.png" alt="">
+										</span>
+										<span class="text">Печи под казан</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/pech-pizza.png" alt="">
+										</span>
+										<span class="text">Печи для пиццы</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/tandir.png" alt="">
+										</span>
+										<span class="text">Тандыры</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="header-catalog-list">
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/koptil.png" alt="">
+										</span>
+										<span class="text">Коптильни</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/kamin.png" alt="">
+										</span>
+										<span class="text">Камины</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/kostr-chash.png" alt="">
+										</span>
+										<span class="text">Костровые чаши</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/pech-musor.png" alt="">
+										</span>
+										<span class="text">Печи для сжигания мусора</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/ugl-rozjig.png" alt="">
+										</span>
+										<span class="text">Уголь и розжиг</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/kazan.png" alt="">
+										</span>
+										<span class="text">Казаны</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/resh-grill.png" alt="">
+										</span>
+										<span class="text">Решетки гриль</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/skovoroda.png" alt="">
+										</span>
+										<span class="text">Сковороды</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="header-catalog-list">
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/shampur.png" alt="">
+										</span>
+										<span class="text">Шампуры</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/akssesuar.png" alt="">
+										</span>
+										<span class="text">Аксессуары</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/chaynik.png" alt="">
+										</span>
+										<span class="text">Чайники</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/kastrul.png" alt="">
+										</span>
+										<span class="text">Кастрюли</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/besedki.png" alt="">
+										</span>
+										<span class="text">Беседки</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/sad-mebel.png" alt="">
+										</span>
+										<span class="text">Садовая мебель</span>
+									</a>
+								</li>
+								<li class="header-catalog-list__item">
+									<a class="header-catalog-list__link" href="#">
+										<span class="icon">
+											<img src="img/catalog-icons/igra.png" alt="">
+										</span>
+										<span class="text">Игротека</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search header-search">
+					<button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+					<form action="/" class="header-search-form">
+						<span class="header-search-form__icon">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</span>
+						<input class="header-search-form__input" type="search" placeholder="Я ищу...">
+						<input class="header-search-form__submit main-btn" type="submit" value="Найти">
+					</form>
+				</div>
+				<div class="header-buttons">
+					<div class="header-buttons__item mob-none remove-on-mob">
+						<button class="header-menu-search-toggler">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+									<defs>
+										<style>
+											.cls-1 {
+												fill: #413b38;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="search.svg" class="cls-1"
+										d="M379.462,26a7.447,7.447,0,0,1,5.884,12.023l4.375,4.375A0.932,0.932,0,1,1,388.4,43.72l-4.375-4.374A7.453,7.453,0,1,1,379.462,26Zm0,13.049a5.592,5.592,0,1,0-5.592-5.592A5.6,5.6,0,0,0,379.462,39.053Z"
+										transform="translate(-372 -26)" />
+								</svg>
+							</span>
+							<span class="text">Поиск</span>
+						</button>
+					</div>
+					<div class="header-buttons__item mob-none">
+						<button class="header-menu-burger">
+							<span class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+									<defs>
+										<style>
+											.cls-1 {
+												fill: #413b38;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="Notepad.svg" class="cls-1"
+										d="M448.5,26.625a2.431,2.431,0,0,1,2.5,2.357V43.839a0.81,0.81,0,0,1-.833.786H431.833A0.81,0.81,0,0,1,431,43.839V28.982a2.432,2.432,0,0,1,2.5-2.357m15.769,1.737H432.827V42.819h16.442V28.362Zm-4.1,6.05h-8.334V32.055h8.334v2.357Zm0,4.713h-8.334V36.769h8.334v2.356Z"
+										transform="translate(-431 -26.625)" />
+								</svg>
+							</span>
+							<span class="text">Меню</span>
+						</button>
+					</div>
+					<div class="header-buttons__item remove-on-mob">
+						<div class="dropdown">
+							<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+										<defs>
+											<style>
+												.cls-1 {
+													fill: #413b38;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="loc.svg" class="cls-1"
+											d="M1305.72,76.987l-5.32,7.332a1.781,1.781,0,0,1-2.8,0l-5.32-7.332a6.533,6.533,0,0,1-1.28-3.863c0-3.934,3.58-7.125,8-7.125s8,3.191,8,7.125A6.533,6.533,0,0,1,1305.72,76.987ZM1299,67.78c-3.31,0-6,2.4-6,5.344a4.884,4.884,0,0,0,.96,2.9l5.04,6.949,5.04-6.949a4.882,4.882,0,0,0,.96-2.9C1305,70.177,1302.31,67.78,1299,67.78Zm0,8.313a2.988,2.988,0,1,1,3.33-2.969A3.164,3.164,0,0,1,1299,76.093Zm0-4.156a1.195,1.195,0,1,0,1.33,1.187A1.262,1.262,0,0,0,1299,71.937Z"
+											transform="translate(-1291 -66)" />
+									</svg>
+								</span>
+								<span class="text">Адрес</span>
+							</button>
+							<div class="dropdown-menu">
+								<h4 class="dropdown-heading">Адресс:</h4>
+								<p>Магазин "Полон стол"</p>
+								<p>Москва, Автомолл "Кунцево"</p>
+								<p>55 км. МКАД (внешняя сторона)</p>
+								<p>ПН - ПТ с 10:00 до 18:00</p>
+								<p>Воскресение - выходной </p>
+							</div>
+						</div>
+					</div>
+					<div class="header-buttons__item">
+						<div class="dropdown">
+							<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+										<defs>
+											<style>
+												.cls-1 {
+													fill: #413b38;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="tel.svg" class="cls-1"
+											d="M1370.7,85a4.545,4.545,0,0,1-1.53-.263,21.086,21.086,0,0,1-12.95-13.282,4.591,4.591,0,0,1,1.59-5.064l0.98-.752a3.131,3.131,0,0,1,4.68,1.059l1.66,3.237a2.2,2.2,0,0,1-.33,2.475l-0.35.378a1.235,1.235,0,0,0-.19,1.382,5.944,5.944,0,0,0,2.56,2.555,1.254,1.254,0,0,0,1.39-.187l0.37-.346a2.234,2.234,0,0,1,2.48-.335l3.24,1.665a3.122,3.122,0,0,1,.8,4.972l-1.13,1.141A4.631,4.631,0,0,1,1370.7,85Zm-10.01-18.127a1.241,1.241,0,0,0-.76.255l-0.99.752a2.718,2.718,0,0,0-.93,3,19.162,19.162,0,0,0,11.78,12.092,2.783,2.783,0,0,0,2.85-.651l1.12-1.141a1.213,1.213,0,0,0,.36-0.877,1.248,1.248,0,0,0-.68-1.112l-3.24-1.664a0.336,0.336,0,0,0-.35.049l-0.38.346a3.152,3.152,0,0,1-3.51.471,7.774,7.774,0,0,1-3.36-3.363,3.107,3.107,0,0,1,.47-3.506l0.35-.378a0.351,0.351,0,0,0,.08-0.211,0.242,0.242,0,0,0-.04-0.141l-1.66-3.237A1.248,1.248,0,0,0,1360.69,66.872Z"
+											transform="translate(-1356 -65)" />
+									</svg>
+								</span>
+								<span class="decktop-text text">Телефон</span>
+								<span class="mobile-text text">Контакты</span>
+							</button>
+							<div class="dropdown-menu">
+								<h4 class="dropdown-heading">Телефон:</h4>
+								<ul class="header-tel-list">
+									<li class="header-tel-list__item">
+										<p>Звоните с 9:00 до 18:00</p>
+										<a href="tel:8 (499) 994-45-15">8 (499) 994-45-15</a>
+									</li>
+									<li class="header-tel-list__item">
+										<p>Бесплатный для России</p>
+										<a href="tel:8 (800) 707-09-13">8 (800) 707-09-13</a>
+									</li>
+								</ul>
+								<div class="mobile-content">
+									<h4 class="dropdown-heading">Адресс:</h4>
+									<p>Магазин "Полон стол"</p>
+									<p>Москва, Автомолл "Кунцево"</p>
+									<p>55 км. МКАД (внешняя сторона)</p>
+									<p>ПН - ПТ с 10:00 до 18:00</p>
+									<p>Воскресение - выходной </p>
+									<a href="#" class="item-link">
+										<span class="icon">
+											<img src="img/icons/whatsapp.png" alt="">
+										</span>
+										<span class="text">Whatsapp</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-buttons__item remove-on-mob">
+						<a href="#" class="item-link">
+							<span class="icon">
+								<img src="img/ws.png" alt="">
+							</span>
+							<span class="text">Whatsapp</span>
+						</a>
+					</div>
+					<div class="header-buttons__item">
+						<a href="#" class="item-link">
+							<span class="icon">
+								<img src="img/cart.png" alt="">
+							</span>
+							<span class="text">Корзина</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<span class="catalog-overlay" id="catalog-overlay"></span>
+		<main class="page main-page">
+			<section class="section main-banner">
+	<div class="container">
+		<div class="main-banner-body small-size" id="main-page-banner">
+			<div class="main-banner-body__item">
+				<img src="img/banners/banner-small-01.jpg" alt="" class="descktop-image">
+				<img src="img/banners/banner-01-mob.jpg" alt="" class="mobile-image">
+			</div>
+			<div class="main-banner-body__item">
+				<img src="img/banners/banner-small-02.jpg" alt="" class="descktop-image">
+				<img src="img/banners/banner-02-mob.jpg" alt="" class="mobile-image">
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="site-breadcrumbs">
+	<div class="container">
+		<ul class="breadcrumbs-list">
+			<li class="breadcrumbs-list__item">
+				<a href="/" class="link">Главная</a>
+			</li>
+			<li class="breadcrumbs-list__item">
+				<span class="icon"><i class="fa-solid fa-right-long"></i></span>
+			</li>
+			<li class="breadcrumbs-list__item">
+				<a href="/" class="link">Раздел</a>
+			</li>
+			<li class="breadcrumbs-list__item">
+				<span class="icon"><i class="fa-solid fa-right-long"></i></span>
+			</li>
+			<li class="breadcrumbs-list__item">
+				<span class="last-crumb">Внутренняя страница</span>
+			</li>
+		</ul>
+	</div>
+</section>
+			<section class="section news-page">
+	<div class="container">
+		<h2 class="section-heading">Статьи</h2>
+		<div class="row news-box-body">
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-01.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Печь под казан – как выбрать| Лучшие печи под казан | Рейтинг лучших печек </a>
+					<p class="news-excerpt">Приготовление любимых блюд своими руками на свежем воздухе — один из лучших сценариев
+						для встречи с друзьями и родными. Ведь что может быть лучше ароматного плова или наваристой ухи, да еще и в
+						доброй компании?</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-02.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Как выбрать газовый гриль и как пользоваться</a>
+					<p class="news-excerpt">Поджаристый шашлык и барбекю, сочные стейки лосося или ароматные запеченные овощи — на
+						гриле можно приготовить столько всего аппетитного!
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-03.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Рекомендации по установке гриля </a>
+					<p class="news-excerpt">Любое помещение, в котором для приготовления пищи или обогрева используется открытый
+						огонь, нуждается в контроле задымления и притоке свежего воздуха.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-04.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Угольный гриль как выбрать и как пользоваться</a>
+					<p class="news-excerpt">Аппетитная еда, приготовленная на гриле, с хрустящей корочкой и дивным ароматом, —
+						одно из никогда не надоедающих удовольствий, история которых идет из глубины веков.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-02.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Как выбрать газовый гриль и как пользоваться</a>
+					<p class="news-excerpt">Поджаристый шашлык и барбекю, сочные стейки лосося или ароматные запеченные овощи — на
+						гриле можно приготовить столько всего аппетитного!
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-03.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Рекомендации по установке гриля </a>
+					<p class="news-excerpt">Любое помещение, в котором для приготовления пищи или обогрева используется открытый
+						огонь, нуждается в контроле задымления и притоке свежего воздуха.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-04.jpg" alt="">
+					</a>
+					<a href="#" class="news-title">Угольный гриль как выбрать и как пользоваться</a>
+					<p class="news-excerpt">Аппетитная еда, приготовленная на гриле, с хрустящей корочкой и дивным ароматом, —
+						одно из никогда не надоедающих удовольствий, история которых идет из глубины веков.
+					</p>
+				</div>
+			</div>
+		</div>
+		<h2 class="section-heading" style="margin-top: 40px;">Новости</h2>
+		<div class="row news-box-body">
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-01.jpg" alt="">
+					</a>
+					<div class="post-date">23.04.2022</div>
+					<a href="#" class="news-title">Печь под казан – как выбрать| Лучшие печи под казан | Рейтинг лучших печек </a>
+					<p class="news-excerpt">Приготовление любимых блюд своими руками на свежем воздухе — один из лучших сценариев
+						для встречи с друзьями и родными. Ведь что может быть лучше ароматного плова или наваристой ухи, да еще и в
+						доброй компании?</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-02.jpg" alt="">
+					</a>
+					<div class="post-date">23.04.2022</div>
+					<a href="#" class="news-title">Как выбрать газовый гриль и как пользоваться</a>
+					<p class="news-excerpt">Поджаристый шашлык и барбекю, сочные стейки лосося или ароматные запеченные овощи — на
+						гриле можно приготовить столько всего аппетитного!
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="news-box-body__item">
+					<a href="#" class="img-convert">
+						<img src="img/post-image/post-03.jpg" alt="">
+					</a>
+					<div class="post-date">23.04.2022</div>
+					<a href="#" class="news-title">Рекомендации по установке гриля </a>
+					<p class="news-excerpt">Любое помещение, в котором для приготовления пищи или обогрева используется открытый
+						огонь, нуждается в контроле задымления и притоке свежего воздуха.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer site-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-3 footer-logo-box">
+				<a href="/" class="site-logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<div class="copyright-col">
+					<div class="site-copyright">
+						<p>Copyright © 2022</p>
+						<p>Все права защищены.</p>
+					</div>
+					<p class="site-copyright-description">
+						Копирование и использование всех составляющих частей сайта в любой форме запрещено.
+					</p>
+					<div class="pay-icons">
+						<img src="img/visa.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<nav class="footer-menu">
+					<ul>
+						<li>
+							<a href="#">Оптовикам</a>
+						</li>
+						<li>
+							<a href="#">Сотрудничество</a>
+						</li>
+						<li>
+							<a href="#">Карта сайта</a>
+						</li>
+						<li>
+							<a href="#">Наш магазин</a>
+						</li>
+						<li>
+							<a href="#">Гарантия</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="socials-links">
+					<a href="#" class="socials-links__item facebook-item">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="#" class="socials-links__item instagram-item">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-4 d-flex flex-column">
+				<div class="footer-address">
+					<p class="footer-address__text">Магазин "Полон стол"</p>
+					<p class="footer-address__text">Москва, Автомолл "Кунцево"</p>
+					<p class="footer-address__text">55 км. МКАД (внешняя сторона),</p>
+					<p class="footer-address__text">Ежедневно с 10:00 до 18:00</p>
+				</div>
+				<div class="footer-links">
+					<a href="#" class="footer-links__item">Конфиденциальность и защита </a>
+					<a href="#" class="footer-links__item">персональной информации</a>
+				</div>
+			</div>
+			<div class="col-sm-3 footer-contacts-col">
+				<div class="footer-title">Телефоны:</div>
+				<div class="footer-contacts-list">
+					<div class="footer-contacts-list__item">
+						<span class="title">Прямой: </span>
+						<a href="tel:8 (499) 994-45-15" class="link">8 (499) 994-45-15</a>
+					</div>
+					<div class="footer-contacts-list__item">
+						<span class="title">Для России Бесплатный:</span>
+						<a href="tel:8 (800) 707-09-13" class="link">8 (800) 707-09-13</a>
+					</div>
+					<div class="footer-contacts-list__item">
+						<span class="title">Звоните ежедневно с 10:00 до 18:00</span>
+					</div>
+				</div>
+				<div class="footer-title">Whatsapp:</div>
+				<div class="footer-contacts-list">
+					<div class="footer-contacts-list__item">
+						<a href="tel:8 (499) 994-45-15" class="link">8 (499) 994-45-15</a>
+					</div>
+				</div>
+				<div class="footer-email">
+					<div class="footer-email__title">Почта: </div>
+					<a href="mailto:mail@in-kamin.ru" class="footer-email__link link">mail@in-kamin.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

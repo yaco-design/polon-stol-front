@@ -1,0 +1,59 @@
+.category-cards-simple {
+	padding: 50px 0;
+	&__item {
+		border-radius: 10px;
+		background: url('../img/category-simple/cat-simp-bg.jpg') center center / cover no-repeat;
+		padding: 30px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.card-title {
+			margin-top: 0;
+			font-size: 26px;
+			color: rgb(20, 20, 20);
+			font-weight: bold;
+			line-height: 1.154;
+			text-align: center;	
+			margin-bottom: 20px;		
+		}
+		.img-convert {
+			max-height: 230px;
+			margin-bottom: 30px;
+			img {
+				max-height: 100%;
+				object-fit: contain;
+			}
+		}
+		.all-button {
+			margin-top: auto;
+		}
+	}
+	.cards-list__item {
+		margin: 0;
+	}
+	.cards-list__item .img-convert {
+		height: 260px;
+	}
+	.slick-track {
+		display: flex;
+		height: 100%;
+	}
+	.slick-initialized .slick-slide {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.cards-list__item {
+		height: 100%;
+	}
+	.cards-list.slick-slider .slick-arrow.slick-next {
+		right: 10px;
+	}
+	.cards-list.slick-slider .slick-arrow.slick-prev {
+		left: 10px;
+	}
+	.slick-list {
+		height: 100%;
+	}
+}

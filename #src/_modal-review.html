@@ -1,0 +1,212 @@
+<!-- Модальное окно (Отзыв)-->
+<div class="modal fade custom-modal review-modal" id="reviewModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			<div class="modal-body">
+				<h4 class="modal-heading">Ваш отзыв о товаре</h4>
+				<form action="" class="product-review-form">
+					<div class="review-rating">
+						<div class="review-rating__title modal-form-title">Оцените покупку <span style="color: red;">*</span></div>
+						<div class="review-rating__content">
+							<form class="rating">
+								<div class="rating__stars">
+									<input id="rating-1" class="rating__input rating__input-1" type="radio" name="rating" value="1">
+									<input id="rating-2" class="rating__input rating__input-2" type="radio" name="rating" value="2">
+									<input id="rating-3" class="rating__input rating__input-3" type="radio" name="rating" value="3">
+									<input id="rating-4" class="rating__input rating__input-4" type="radio" name="rating" value="4">
+									<input id="rating-5" class="rating__input rating__input-5" type="radio" name="rating" value="5">
+									<label class="rating__label" for="rating-1">
+										<svg class="rating__star" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+											<g transform="translate(16,16)">
+												<circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8"
+													transform="scale(0)" />
+											</g>
+											<g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<g transform="translate(16,16) rotate(180)">
+													<polygon class="rating__star-stroke"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="none" />
+													<polygon class="rating__star-fill"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="#000" />
+												</g>
+												<g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+													<polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+												</g>
+											</g>
+										</svg>
+									</label>
+									<label class="rating__label" for="rating-2">
+										<svg class="rating__star" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+											<g transform="translate(16,16)">
+												<circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8"
+													transform="scale(0)" />
+											</g>
+											<g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<g transform="translate(16,16) rotate(180)">
+													<polygon class="rating__star-stroke"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="none" />
+													<polygon class="rating__star-fill"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="#000" />
+												</g>
+												<g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+													<polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+												</g>
+											</g>
+										</svg>
+									</label>
+									<label class="rating__label" for="rating-3">
+										<svg class="rating__star" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+											<g transform="translate(16,16)">
+												<circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8"
+													transform="scale(0)" />
+											</g>
+											<g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<g transform="translate(16,16) rotate(180)">
+													<polygon class="rating__star-stroke"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="none" />
+													<polygon class="rating__star-fill"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="#000" />
+												</g>
+												<g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+													<polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+												</g>
+											</g>
+										</svg>
+									</label>
+									<label class="rating__label" for="rating-4">
+										<svg class="rating__star" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+											<g transform="translate(16,16)">
+												<circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8"
+													transform="scale(0)" />
+											</g>
+											<g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<g transform="translate(16,16) rotate(180)">
+													<polygon class="rating__star-stroke"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="none" />
+													<polygon class="rating__star-fill"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="#000" />
+												</g>
+												<g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+													<polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+												</g>
+											</g>
+										</svg>
+									</label>
+									<label class="rating__label" for="rating-5">
+										<svg class="rating__star" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+											<g transform="translate(16,16)">
+												<circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8"
+													transform="scale(0)" />
+											</g>
+											<g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<g transform="translate(16,16) rotate(180)">
+													<polygon class="rating__star-stroke"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="none" />
+													<polygon class="rating__star-fill"
+														points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07"
+														fill="#000" />
+												</g>
+												<g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+													<polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+													<polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+												</g>
+											</g>
+										</svg>
+									</label>
+								</div>
+							</form>
+							<div class="description">— Без оценки</div>
+						</div>
+					</div>
+					<div class="product-review-form__item">
+						<span class="modal-form-title">Ваше имя<span style="color: red;">*</span></span>
+						<input type="text">
+					</div>
+					<div class="product-review-form__item">
+						<span class="modal-form-title">Поделитесь впечатлениями о товаре<span style="color: red;">*</span></span>
+						<textarea></textarea>
+					</div>
+					<div class="product-review-form__item file-item">
+						<span class="modal-form-title">Загрузить фото товара</span>
+						<input type="file" id="review-form-file-input" class="input">
+						<label for="review-form-file-input" class="label">
+							<span class="file-button">
+								<span class="icon">
+									<img src="img/icons/photo-icon.png" alt="">
+								</span>
+								<span class="text">Загружено 0 файлов</span>
+							</span>
+							<div class="text-convert">
+								<p>До 10 изображений
+									в формате PNG, JPEG.
+								</p>
+								<p>
+									Размер одного файла
+									не более 2 мб.
+								</p>
+							</div>
+						</label>
+					</div>
+					<div class="product-review-form__item file-item">
+						<span class="modal-form-title">Загрузить фото товара</span>
+						<input type="file" id="review-form-photo-input" class="input">
+						<label for="review-form-photo-input" class="label">
+							<div class="img-convert">
+								<span class="icon">
+									<img src="img/icons/photo-icon.png" alt="">
+								</span>
+								<img src="img/avatar.png" alt="" class="img">
+							</div>
+							<div class="text-convert">
+								<div class="title">Ваше фото</div>
+								<span class="text">При желании</span>
+							</div>
+						</label>
+					</div>
+					<div class="product-review-form__item checkbox-item">
+						<input type="checkbox" id="review-form-privacy-checkbox" class="input" checked>
+						<label for="review-form-privacy-checkbox" class="label">
+							<span class="icon"></span>
+							<span class="text">
+								Согласен с <a href="#" class="link"> Правилами пользования и политикой
+									конфиденциальности магазина ПолонСтол <span style="color: red;">*</span></a>
+							</span>
+						</label>
+					</div>
+					<div class="product-review-form__item submit-item">
+						<input type="submit" class="main-btn null-btn" value="Отправить">
+						<span class="submit-description"><span style="color: red;">*</span> Обязательно к заполнению</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

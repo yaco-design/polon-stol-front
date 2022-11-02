@@ -1,0 +1,224 @@
+@use "sass:math";
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "SegoeUI";
+$fontSize: 16;
+//</Шрифт по умолчанию>==========================================================================================
+
+:root {
+	--main-color: #fcb800;
+	--black-color: #141414;
+	--light-text: #828282;
+}
+
+body {
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #d1d1d1;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: var(--main-color);
+	}
+}
+//</ШРИФТЫ>=======================================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	flex: 1 1 auto;
+}
+.null-btn {
+	padding: 18px 40px;
+	border-radius: 6px;
+	transition: all .3s ease;
+}
+.main-btn {
+	background: var(--main-color);
+	border: none;
+	font-size: 12px;
+	color: rgb(20, 20, 20);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	&:hover {
+		background: var(--black-color);
+		color: #fff;
+	}
+}
+
+.second-btn {
+	font-size: 12px;
+	color: rgb(20, 20, 20);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;	
+	background: #f5f5f5;
+	border: 1px solid #e6e6e6;
+	&:hover {
+		background: var(--black-color);
+		color: #fff;
+	}
+}
+
+.link {
+	font-size: 13px;
+	color: rgb(62, 119, 170);
+	text-decoration: underline;
+	line-height: 1.2;
+	text-align: center;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.section-heading {
+	font-size: 30px;
+	color: #141414;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.site-breadcrumbs {
+	padding: 40px 0;
+}
+.breadcrumbs-list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	&__item {
+		font-size: 14px;
+		color: #828282;
+		line-height: 1.2;
+		text-align: left;		
+		margin-right: 8px;
+		.icon {
+			font-size: 12px;
+		}
+	}
+}
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "bootstrap";
+@import "fancybox";
+@import "slick-slider";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "null";
+@import "header";
+@import "footer";
+@import "modals";
+@import "main-banner";
+@import "cards-box";
+@import "category-cards";
+@import "category-cards-simple";
+@import "about-box";
+@import "news-box";
+@import "partners-slider";
+@import "delivery-and-pay";
+@import "reviews-box";
+@import "card-page";
+@import "contacts-page";
+@import "shop-cart";
+@import "listing-page";
+@import "page-navigation";
+@import "error-page";
+@import "news-page";
+@import "rating";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+
+.slick-arrow {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+	background: #ededed;
+	border-radius: 250px;
+	font-size: 0;
+	transition: all .3s ease;
+	&:hover {
+		background: var(--main-color);
+	}
+	&.slick-next {
+		right: -20px;
+		&:before {
+			content: '\f061';
+			font-family: 'fontawesome';
+			font-size: 20px;
+		}
+	}
+	&.slick-prev {
+		left: -20px;
+		&:before {
+			content: '\f060';
+			font-family: 'fontawesome';
+			font-size: 20px;
+		}
+	}
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	button {
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		padding: 0;
+		background: #ededed;
+		border-radius: 250px;
+	}
+	li {
+		margin: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&.slick-active {
+			button {
+				background: var(--main-color);
+			}
+		}
+	}
+}
+
+
+
+//<ПОДКЛЮЧЕНИЕ Адаптива>=========
+@import "responsive";
+//</ПОДКЛЮЧЕНИЕ Адаптива>=====
+

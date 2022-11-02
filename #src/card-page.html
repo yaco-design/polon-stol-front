@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Карточка товара"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page card-page">
+			@@include('_main-banner-small.html',{})
+			@@include('_breadcrumbs.html',{})
+			@@include('_card-main.html',{})
+			@@include('_card-tabs.html',{})
+			@@include('_card-complekt.html',{})
+			@@include('_card-about.html',{})
+			@@include('_cards-section-dark.html',{})
+			@@include('_cards-section.html',{})
+			@@include('_cards-section-dark.html',{})
+			@@include('_reviews-box.html',{})
+
+			@@include('_modal-subscribe.html',{})
+			@@include('_modal-delivery.html',{})
+			@@include('_modal-garant.html',{})
+			@@include('_modal-review.html',{})
+			@@include('_modal-price.html',{})
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_js.html',{})
+</body>
+
+</html>

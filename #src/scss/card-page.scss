@@ -1,0 +1,363 @@
+.card-main {
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		.icon {
+			font-size: 30px;
+			color: #fcb800;
+		}
+	}
+	&__about {
+		display: flex;
+		align-items: center;
+	}
+	.product-article {
+		margin-right: 15px;
+	}
+}
+
+.product-article {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: left;
+	&__title {
+		color: #949494;
+		margin-right: 8px;
+	}
+}
+
+.product-reviews {
+	display: flex;
+	align-items: center;
+	&__star {
+		position: relative;
+		width: 91px;
+		height: 18px;
+		overflow: hidden;
+		margin-right: 10px;
+		.strok-star {
+			background: url('../img/star-strok.svg') left 0 center / 18px;
+			display: flex;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 17px;
+		}
+		.fill-star {
+			background: url('../img/star-fill.svg') left 0 center / 18px;
+			display: flex;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 17px;
+		}
+	}
+}
+
+.card-thumbnail-slider {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 auto;
+	overflow: hidden;
+	img {
+		border-radius: 10px;
+	}
+	&__nav {
+		width: 80px;
+		height: 720px;
+		padding: 70px 0;
+		position: relative;
+		flex: 0 0 80px;
+		margin-right: 30px;
+		.slick-current {
+			box-shadow: inset 0 0 0 2px #fcb800;
+		}
+		img {
+			height: 100px!important;
+			object-fit: contain;
+			margin: 10px 0;
+			padding: 8px;
+		} 
+	}
+	&__big {
+		height: 720px;
+		background: #f7f7f7;
+		border-radius: 10px;
+		padding: 30px;
+		flex: 1 1 auto;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		.slick-list, .slick-track {
+			flex: 1 1 auto;
+    	height: 100%;
+		}
+	}
+	.slick-arrow.slick-next {
+		transform: rotate(90deg) translateY(50%);
+		bottom: 0;
+		top: auto;
+		left: 50%;
+		right: auto;
+	}
+	.slick-arrow.slick-prev {
+		transform: rotate(90deg) translateY(50%);
+		bottom: auto;
+		top: 0;
+		left: 50%;
+		right: auto;
+	}
+	.slick-arrow.slick-disabled {
+		background: transparent;
+		opacity: 0.3;
+	}
+	.slick-arrow {
+		background-color: transparent;
+	}
+}
+
+.card-btn-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 30px 0;
+	&__item {
+		display: flex;
+		list-style: none;
+		width: 50%;
+		padding-right: 20px;
+		margin: 8px 0;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		color: rgb(0, 0, 0);
+		text-decoration: underline;
+		.icon {
+			flex: 0 0 auto;
+			margin-right: 12px;
+		}
+	}
+}
+
+.card-logo-company {
+	margin-bottom: 40px;
+}
+
+.card-info-body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.product-price {
+	font-size: 36px;
+	color: rgb(20, 20, 20);
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+.product-price-discount {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 15px;
+	&__red {
+		font-size: 36px;
+		color: #c13730;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	&__old {
+		font-size: 30px;
+		color: rgb(20, 20, 20);
+		font-weight: bold;
+		line-height: 1.2;
+		margin-left: 15px;
+		text-decoration: line-through;
+	}
+}
+.product-price-description {
+	margin-bottom: 20px;
+}
+
+.one-click-by {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.product-delivery-price {
+	font-size: 14px;
+	text-align: left;
+	margin-bottom: 0;
+	.price {
+		font-weight: 700;
+	}
+}
+
+.card-main {
+	padding-bottom: 50px;
+}
+
+// card-tabs
+
+.card-tabs {
+	padding: 50px 0;
+	.nav-tabs .nav-link {
+		padding: 16px 50px;
+		border-radius: 10px 10px 0 0;
+		margin-right: 5px;
+		font-size: 16px;
+		color: rgb(148, 148, 148);
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.nav-tabs .nav-link.active {
+		background: #ededed;
+		color: #000;
+	}
+	.tab-content > .tab-pane {
+		padding: 40px 0;
+	}
+}
+
+.card-mini-heading {
+	font-size: 24px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: left;	
+	margin-bottom: 20px;
+}
+
+.card-tabs-list {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	&__item {
+		font-size: 16px;
+		line-height: 1.875;
+		text-align: left;	
+		display: flex;
+		align-items: center;
+		.title {
+			color: #828282;
+			display: flex;
+			align-items: center;
+			position: relative;
+			width: 40%;
+			&:after {
+				content: '';
+				display: flex;
+				flex: 1 1 auto;
+				height: 1px;
+				border-bottom: 1px dashed #828282;
+				margin: 0 15px;
+			}
+		}
+	}
+}
+
+
+// card-complekt
+.card-complekt {
+	padding-bottom: 50px;
+}
+
+.card-complekt-body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid #e9e4db;
+	&__head, &__footer {
+		padding: 20px 15px;
+		background: #e9e4db;
+	}
+	&__content {
+		padding: 20px 35px;
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.heading {
+		font-size: 30px;
+		color: rgb(20, 20, 20);
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: left;		
+	}
+	.price-box {
+		display: flex;
+		align-items: flex-end;
+		font-size: 22px;
+		font-weight: 600;
+		color: rgb(20, 20, 20);
+		line-height: 1.2;
+		&__title {
+			margin-right: 8px;
+		}
+		&__old {
+			font-weight: 700;
+			text-decoration: line-through;
+			margin-right: 10px;
+			display: flex;
+		}
+		&__new {
+			color: #c1372f;
+			font-weight: 700;
+			font-size: 30px;
+			margin-right: 15px;
+		}
+		.main-btn {
+			min-width: 155px;
+		}
+	}
+	.cards-list {
+		padding: 0 100px;
+	}
+	.slick-arrow.slick-disabled {
+		opacity: 0.2;
+		touch-action: none;
+		pointer-events: none;
+	}
+}
+
+// card-about
+
+.card-about {
+	padding-bottom: 50px;
+	.link-list {
+		.card-mini-heading {
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+	}
+}
+
+.card-info-body-col {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}

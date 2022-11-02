@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Навигация по страницам"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page main-page">
+			<div class="plug-box">
+				<div class="plug-box-list">
+					<a href="/index.html" class="plug-box-list__item" target="_blank">Главная страница</a>
+					<a href="/delivery-and-pay.html" class="plug-box-list__item" target="_blank">Доставка и оплата</a>
+					<a href="/card-page.html" class="plug-box-list__item" target="_blank">Карточка товара</a>
+					<a href="/contacts.html" class="plug-box-list__item" target="_blank">Контакты</a>
+					<a href="/shop-cart-sucess.html" class="plug-box-list__item" target="_blank">Корзина - спасибо</a>
+					<a href="/shop-cart-empty.html" class="plug-box-list__item" target="_blank">Корзина - пустая</a>
+					<a href="/shop-cart.html" class="plug-box-list__item" target="_blank">Корзина - с товаром</a>
+					<a href="/listing.html" class="plug-box-list__item" target="_blank">Листинг</a>
+					<a href="/listing-big.html" class="plug-box-list__item" target="_blank">Листинг крупные категории</a>
+					<a href="/error-page.html" class="plug-box-list__item" target="_blank">Ошибка 404</a>
+					<a href="/news-single.html" class="plug-box-list__item" target="_blank">Новости и статьи</a>
+					<a href="/news-page.html" class="plug-box-list__item" target="_blank">Страница блога</a>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_js.html',{})
+</body>
+
+</html>

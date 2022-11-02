@@ -1,0 +1,260 @@
+.delivery-terms {
+	.mark-icon-list {
+		padding: 20px 0;
+	}
+}
+
+.link-list {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+	padding: 0;
+	&__item {
+		position: relative;
+		display: flex;
+		list-style: none;
+		margin: 6px 0;
+		&:before {
+			content: '';
+			display: flex;
+			width: 6px;
+			height: 6px;
+			border-radius: 250px;
+			background: #ec922f;
+			flex: 0 0 auto;
+			margin-right: 8px;
+			margin-top: 7px;
+		}
+	}
+}
+
+.delivery-terms-cards {
+	padding: 30px 0;
+	.infobox-card {
+		align-items: center;
+		height: 100%;
+		&__text {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.mark-icon-list {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		color: rgb(0, 0, 0);
+		line-height: 1.5;
+		text-align: left;		
+		margin: 6px 0;
+		padding-left: 30px;
+		position: relative;
+		&:before {
+			content: '\f00c';
+			font-family: 'fontawesome';
+			font-size: 19px;
+			width: 15px;
+			height: 15px;
+			color: #ec922f;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 6px;
+			margin-right: 12px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.sub-list {
+		margin: 10px 0 0;
+		padding: 0;
+		&__item {
+			display: flex;
+			padding-left: 20px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 12px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				border-radius: 250px;
+				background: #ec922f;
+			}
+		}
+	}
+}
+
+.delivery-terms-table {
+	margin: 30px 0;
+	border: 1px solid #b9ae9b;
+	border-radius: 10px;
+	overflow: hidden;
+	.dark {
+		font-size: 18px;
+		color: rgb(20, 20, 20);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;		
+		background: #b9ae9b;
+	}
+	.column-1 {
+		width: 20%;
+	}
+	.free {
+		font-size: 16px;
+		color: rgb(194, 55, 47);
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;	
+		background: #efe7e5;
+		font-weight: 700;
+	}
+	table {
+		border-color: #b9ae9b;
+		margin: 0;
+	}
+	td, th {
+		padding: 25px 20px;
+		font-size: 16px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		border: 1px solid #b9ae9b;
+		vertical-align: middle;
+	}
+	th {
+		background: #e9e4db;
+	}
+}
+
+.table-description {
+	font-size: 14px;
+	line-height: 1.2;
+	span {
+		margin-right: 4px;
+	}
+}
+
+// delivery-moscow
+
+.delivery-moscow {
+	padding: 70px 0;
+	.section-heading {
+		margin-bottom: 30px;
+	}
+}
+
+.onicon-heading {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 10px;
+	&__icon {
+		margin-right: 20px;
+		flex: 0 0 auto;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__title {
+		margin-bottom: 0;
+		font-size: 24px;
+		color: rgb(20, 20, 20);
+		font-weight: bold;
+		line-height: 1.2;	
+	}
+}
+
+// delivery-region
+
+.delivery-region {
+	padding: 70px 0;
+	background: #f6f6f6;
+	.section-heading {
+		margin-bottom: 40px;
+	}
+	.mark-icon-list {
+		margin: 15px 0;
+	}
+	&__text {
+		font-size: 16px;
+		color: rgb(0, 0, 0);
+		line-height: 1.5;
+		text-align: left;	
+		margin-bottom: 30px;
+	}
+}
+
+
+// delivery-pickup
+
+.delivery-pickup {
+	padding: 70px 0;
+	.section-heading {
+		margin-bottom: 30px;
+	}
+	.infobox-card {
+		align-items: center;
+	}
+}
+
+
+// delivery-about
+
+.delivery-about {
+	padding: 70px 0;
+	background: #f6f6f6;
+	.section-heading {
+		margin-bottom: 40px;
+	}
+}
+
+.payments-icons-list {
+	display: flex;
+	justify-content: space-around;
+	border-radius: 10px;
+	background-color: #efe7e5;	
+	padding: 20px 15px;
+	&__item {
+		height: 45px;
+		img {
+			object-fit: contain;
+			max-height: 100%;
+		}
+	}
+}
+
+// refund-box
+
+.refund-box {
+	padding: 70px 0;
+	.section-heading {
+		margin-bottom: 30px;
+	}
+}
+
+// catalog-cards
+
+.catalog-cards {
+	padding: 70px 0;
+	background: #f6f6f6;
+	.category-cards-body {
+		flex-wrap: wrap;
+	}
+}
